@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.5)),url(https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media//banner.jpg) no-repeat;
+    background-size: cover;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 15vw;
+}
+
+.flex-design{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mt{
+    margin-top: 1rem;
+}
+
+.mb{
+    margin-bottom: 3rem;
+}
+
+.pad{
+    padding: 0.5rem 1rem;
+}
+
+.btn{
+    background: transparent;
+    color: white;
+    border: 1.5px solid grey;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+}
+
+.redbtn{
+    padding: 0.4rem 1.3rem;
+    margin-left: 0.5rem;
+    background-color: #E50914;
+    border: none;
+    font-weight: 500;
+}
+
+.content{
+    height: 75vh;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+.text-content,.text,.text-area{
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.text-content h1,.text-area h1{
+    font-size: 3rem;
+}
+
+.text-content h2, .text-content h3{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.text-content h3{
+    font-size: 1.2rem;
+}
+
+.in{
+    width: fit-content;
+    position: relative;
+    justify-content: center;
+}
+
+.in input{
+    width: 35vw;
+    background-color: rgba(0, 0, 0, 0.411);
+    border: 1.5px solid grey;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 0.2rem;
+    height: 10vh;
+    padding-top: 1.5rem;
+}
+
+label{
+    color: rgb(207, 207, 207);
+    position: absolute;
+    top: 18px;
+    transform: translateX(-240px);
+    font-weight: 300;
+    transition: all 0.2s ease;
+}
+
+input:valid+label,input:focus+label{
+    transform: translateY(-8px) translateX(-264px);
+    font-size: 0.8rem;
+    color: rgb(218, 218, 218);
+}
+
+.supbtn{
+    border: none;
+    height: 10vh;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+main,footer{
+    background-color: black;
+}
+
+.line{
+    width: 100%;
+    height: 6px;
+    background-color: rgb(54, 54, 54);
+}
+
+.text h3{
+    font-weight: 500;
+}
+
+.text{
+    text-align: left;
+}
+
+.img{
+    width: 100%;
+}
+
+.page{
+    height: 100vh;
+    width: 95%;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.container{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+.container button{
+    color: white;
+    font-size: 1.4rem;
+    background-color: rgb(54, 54, 54);
+    padding: 1.5rem;
+    border: none;
+    text-align: left;
+    display: flex;
+    position: relative;
+    transition: all 0.3s;
+}
+
+
+
+
+.container button::after{
+    content: "+";
+    display: block;
+    position: absolute;
+    right: 20px;
+}
+
+.container button{
+    color: white;
+    text-decoration: none;
+}
+
+.container button{
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.container li::after{
+    content: "+";
+    position: absolute;
+    display: block;
+    right: 30px;
+    top: 18px;
+    font-size: 2rem;
+}
+
+ .in{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container{
+    width: 100%;
+    color: rgb(129, 129, 129);
+    cursor: pointer;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-container li{
+    padding: 0.3rem;
+    transition: all 0.2s;
+}
+
+.heading{
+    padding-top: 2rem;
+}
+.footer-container li:hover{
+    color: white;
+}
+
+footer h1{
+    margin-left: 1rem;
+    color: rgb(129, 129, 129);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width:600px){
+
+    body{
+        overflow: hidden;
+    }
+
+    .text-content h1{
+        font-size: 2rem;
+    }
+
+    .text-content h2{
+        font-size: 1.5rem;
+    }
+
+    .text-content h3{
+        font-size: 1rem;
+    }
+
+    .in{
+        flex-direction: column;
+        width: 80vw;
+        gap: 1rem;
+    }
+
+    .in input{
+        width: 100%;
+        height: 7vh;
+    }
+
+    .in input + label{
+        left: 75%;
+        top: 13%;
+        width: 100%;
+    }
+
+    .in input:focus+label{
+        left: 85%;
+    }
+
+    .supbtn button{
+        height: 7vh;
+        width: 100%;
+    }
+
+    .page{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .page .text{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .mail .text-content{
+        font-size: 0.8rem;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-container ul{
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
